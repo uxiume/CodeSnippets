@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>col</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#pragma mark - UICollectionView数据源方法
+//定义UICollectionView展示的区数
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
+    return &lt;#expression#&gt;;
+}
+
+//定义UICollectionView每个区展示的UICollectionViewCell 个数
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+    return &lt;#expression#&gt;;
+}
+
+//定义每个UICollectionViewCell展示的内容
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:&lt;#expression#&gt; forIndexPath:indexPath];
+    cell.backgroundColor = [UIColor greenColor];
+    return cell;
+}
+
+#pragma mark --UICollectionViewDelegateFlowLayout
+//定义每个UICollectionViewCell 的大小
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
+    //根据要展示的UICollectionView内容计算UICollectionViewCell的frame
+    return CGSizeMake(&lt;#CGFloat width#&gt;, &lt;#CGFloat height#&gt;);
+}
+//定义每个UICollectionViewCell 的间距
+-(UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section {
+    return UIEdgeInsetsMake(&lt;#CGFloat top#&gt;, &lt;#CGFloat left#&gt;, &lt;#CGFloat bottom#&gt;, &lt;#CGFloat right#&gt;);
+}
+//定义每个UICollectionViewCell 纵向的间距
+- (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section {
+    return &lt;#expression#&gt;;
+}
+
+
+#pragma mark -UICollectionView代理方法
+//UICollectionViewCell 点击后调用的方法
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    
+}
+
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>3B538211-1B1A-4F83-85D0-528535A8F84C</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>UICollectionView协议方法</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>😸UICollectionVIewDataSource&amp;Delegate</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

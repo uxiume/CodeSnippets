@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>vcd</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#pragma mark - ⚙ 数据初始化
+- (void)initDataSource {
+    //  &lt;#初始化Controller中需要用到的一些数据，如字面量字符串，数组，字典等#&gt;
+}
+
+#pragma mark - ♻️ Lifecycle
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    [self initDataSource];//!&lt;初始化一些数据
+    self.view.backgroundColor = UIColor.whiteColor;
+    [self setupUI];
+}
+
+#pragma mark - 💤 LazyLoad
+//  &lt;#重写属性 Seter || Geter 方法#&gt;
+
+
+#pragma mark - 🔨 CustomMethod
+- (void)setupUI {
+    
+}
+
+
+#pragma mark - 🎬 ActionMethod
+//  &lt;#ActionMethod#&gt;
+
+
+#pragma mark - ⛓ DelegateMethod
+//  &lt;#UITableViewDataSource &amp; UITableViewDelegate#&gt;
+//  &lt;#DelegateMethod#&gt;
+
+
+#pragma mark - 🌏 NetworkMethod
+- (void)networkRequest4 {
+    
+}
+
+
+#pragma mark - 👁 OtherMethod
+
+
+
+@end
+
+
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>BBFE4B22-D796-4C47-B51C-7F622F8E2EB6</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>ViewController中代码的逻辑规范</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>😸ViewController中代码逻辑</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
