@@ -3,24 +3,24 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>zhu</string>
+	<string>strf</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>///&lt; &lt;#property注释#&gt;</string>
+	<string>[NSString stringWithFormat:@"&lt;#%@#&gt;",&lt;#agv#&gt;]&lt;#;#&gt;</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>2DEDAAF2-2F4B-47A7-BED0-3E2D089BF33B</string>
+	<string>461D917C-EF99-484D-9A0C-D2B14553FB16</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>属性注释</string>
+	<string>格式化数据</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>😸属性注释</string>
+	<string>😸格式化数据</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>

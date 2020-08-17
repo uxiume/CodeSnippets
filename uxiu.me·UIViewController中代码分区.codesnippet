@@ -10,15 +10,14 @@
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>#pragma mark - ⚙ 数据初始化
-- (void)initDataSource {
+- (void)initData {
     //  &lt;#初始化Controller中需要用到的一些数据，如字面量字符串，数组，字典等#&gt;
 }
 
 #pragma mark - ♻️ Lifecycle
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self initDataSource];//!&lt;初始化一些数据
-    self.view.backgroundColor = UIColor.whiteColor;
+    [self initData];
     [self setupUI];
 }
 
@@ -37,8 +36,6 @@
 
 
 #pragma mark - ⛓ DelegateMethod
-//  &lt;#UITableViewDataSource &amp; UITableViewDelegate#&gt;
-//  &lt;#DelegateMethod#&gt;
 
 
 #pragma mark - 🌏 NetworkMethod

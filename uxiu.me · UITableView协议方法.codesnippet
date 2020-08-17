@@ -10,12 +10,16 @@
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>#pragma mark    UITableViewDataSource 数据源协议方法
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return 5;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"string"];
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"string" forIndexPath:indexPath];
     
     
@@ -24,6 +28,7 @@
 
 #pragma mark    UITableViewDelegate  代理方法
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
 }</string>
 	<key>IDECodeSnippetIdentifier</key>
